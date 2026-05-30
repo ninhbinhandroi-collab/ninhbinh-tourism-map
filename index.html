@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Bản đồ du lịch Ninh Bình</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-header">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/0/0c/Logo_Ninh_Binh.png/120px-Logo_Ninh_Binh.png" alt="Logo" class="logo">
+        <h2>Bản đồ du lịch cộng đồng Ninh Bình</h2>
+    </div>
+
+    <div class="button-bar">
+        <button id="btnMap"><i class="fas fa-map"></i> 🗺️ Bản đồ</button>
+        <button id="btnFood"><i class="fas fa-utensils"></i> 🍜 Ẩm thực</button>
+        <button id="btnStay"><i class="fas fa-hotel"></i> 🏨 Lưu trú</button>
+        <button id="btnCheckin"><i class="fas fa-camera"></i> 📸 Check-in</button>
+        <button id="btnContact"><i class="fas fa-phone"></i> 📞 Liên hệ</button>
+    </div>
+
+    <div id="map" style="height: 65vh; width: 100%;"></div>
+
+    <div id="infoPanel" class="info-panel" style="display: none;">
+        <button id="closePanel"><i class="fas fa-times"></i></button>
+        <div id="panelContent"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
